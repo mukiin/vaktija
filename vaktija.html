@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="vaktija" />
+    <meta name="keywords" content="vaktija" />
+    <title>Islamska skupnost milosti</title>
+
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/colors/color.css" title="color" />
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    background: url('assets/images/ozadje.png') no-repeat center center fixed;  
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding-top: 150px;
+    
+  }
+
+  .content {
+    text-align: center;
+    color: white;
+  }
+
+  .selec-wrp {
+    margin-bottom: 20px;
+  }
+
+</style>
+
+</head>
+<body class=" black-layer opc1">
+<main>
+        <section class="responsive-section">
+            
+            <div class="gap">
+                <div class="container"  >
+                    <div class="sec-tl">
+                    <div class="prayer-timing-wrp" >
+                        <div class="row" >
+                            <div class="col-md-2 col-sm-12 col-lg-2" >                              
+                            </div>                  
+                            <div class="col-md-7 col-sm-12 col-lg-7" >
+                                <div class="timing-data">
+                                    <div class="cntry-selc">
+                                        <br><br>
+                                        <div class="selec-wrp brd-rd5">
+                                            <select id="comboB" onchange="get_azan_time(this)">
+                                              <option>Izberite mesto</option>
+                                              <option value="Ljubljana">Ljubljana</option>
+                                              <option value="Maribor">Maribor</option>                                          
+                                              <option value="Jesenice">Jesenice</option>
+                                              <option value="Novo mesto">Novo mesto</option>
+                                              <option value="Celje">Celje</option>
+                                              <option value="Nova Gorica">Nova Gorica</option>
+                                              <option value="Murska Sobota">Murska Sobota</option>
+                                              <option value="Dravograd">Dravograd</option>
+                                            </select>
+                                          </div>
+                                    </div>
+									<div id ="result-update"></div>
+                                    <div class="prayer-timings text-center" >
+                                        <table class="prayer-timings-table" >
+                                            <thead>
+												<tr>
+													<th><span>&ensp;&ensp;&ensp;Molitev &ensp;&ensp;&ensp;&ensp;</span><img src="assets/images/pshape.png" alt=""></th>
+													<th><span>Ezan</span><img src="assets/images/pshape.png" alt=""></th>
+													<th><span>Ikamet &ensp;&ensp;</span><img src="assets/images/pshape.png" alt=""></th>
+												</tr>
+											</thead>
+                                            <tbody>
+                                                <tr class = "">                                                 
+													<td><span class="prayer-name">Fedžr</span></td>
+													<td class ="fajr-azan-time">--:--</td>
+													<td class ="fajr-azan-prayer">--:--</td>
+												</tr>
+                                                
+                                                <tr>
+													<td><span class="prayer-name">Sončni vzhod</span></td>
+													<td class ="sunrise-azan-time">--:--</td>                                          
+													
+												</tr>
+                                            
+                                                <tr>
+													<td><span class="prayer-name">Zuhr</span></td>
+													<td class ="zohar-azan-time">--:--</td>
+													<td class ="zohar-azan-prayer">--:--</td>
+												</tr>
+                                                <tr>
+													<td><span class="prayer-name">Asr</span></td>
+													<td class ="asr-azan-time">--:--</td>
+													<td class ="asr-azan-prayer">--:--</td>
+												</tr>
+                                                <tr>
+													<td><span class="prayer-name">Magrib</span></td>
+													<td class ="maghrib-azan-time">--:--</td>
+													<td class ="maghrib-azan-prayer">--:--</td>
+												</tr>
+                                                <tr>
+													<td><span class="prayer-name">Iša</span></td>
+													<td class ="isha-azan-time">--:--</td>
+													<td class ="isha-azan-prayer">--:--</td>
+												</tr>
+                                                
+                                                <tr>
+													<td><span class="prayer-name"></span></td>
+													
+												</tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                        <img src="assets/images/logo-is.png" alt="logo-is.png" itemprop="image" style="display: block; margin: 0 auto;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+       
+    </main>
+   
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcavdONRtu_0BfV63xiQX1LiJpX1ZJ2N0"></script>
+    <script src="assets/js/google-map-int.js"></script>
+    <script src="assets/js/custom-scripts.js"></script>
+	<script src="namaz-timings/namaz.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>	
+</html>
